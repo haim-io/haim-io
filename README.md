@@ -4,10 +4,15 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f532a32d-4fc1-441d-aa28-cdc5e2c2e79c/deploy-status)](https://app.netlify.com/sites/gatsby-starter-mate/deploys)
 
 > Gatsby starter for [`gatsby-theme-mate`](https://github.com/EmaSuriano/gatsby-theme-mate). An accessible and fast portfolio starter for Gatsby integrated with Contentful CMS.
+## How to preview with Vercel
+
+Vercel automatically creates a deployment for pushed branches.
+1. Go to the deployments page (https://vercel.com/haim-engineering/haim-io/deployments)
+2. After the branch push, you'll find your deployment running on that list.
+3. Click on the deployment and then click one of the URLs provided under the **DOMAINS** section.
 
 The target audience are Developers 💻 and Tech Writers ✍️.
 
-**[Check the Demo ✨](https://gatsby-starter-mate.netlify.app/)**
 
 ## Why? 🤔
 
