@@ -255,8 +255,8 @@
           "linkType": "Asset"
         },
         {
-          "id": "aboutMe",
-          "name": "About me",
+          "id": "aboutUs",
+          "name": "About us",
           "type": "Text",
           "localized": false,
           "required": false,
@@ -548,7 +548,7 @@
           "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "aboutMe",
+          "fieldId": "aboutUs",
           "widgetId": "markdown",
           "widgetNamespace": "builtin"
         },
@@ -746,8 +746,8 @@
             }
           }
         },
-        "aboutMe": {
-          "en-US": "Hello 👋 I'm Mate a gatsby starter which is focus on simplicity and extensibility. It's build with Gatsby(duh), [Rebass](https://jxnblk.com/rebass/) (styled-component system) and [Contentful](https://www.contentful.com/).\n\nThe starter will give you 4 sections (it's really easy to add more if you want 😃):\n* [Landing:](#home) Displays a nice greeting with your name, also your roles (what you  are) and all your social links.\n* [About:](#about) Show the about section where you can write about who you are, what you like to do, etc. Also you can add a photo next to it!\n* [Project:](#projects) Displays a card for all your project that you've made and also the posibility to link with github or and external link.\n* [Writing:](#writing) Take the information about your medium user and show up to 6 stories as cards with the link to Medium."
+        "aboutUs": {
+          "en-US": "Welcome to Haim Engineering, a dynamic and innovative technology company founded by two highly experienced software engineers with over 15 years of experience each. Our company was founded with the vision of providing bespoke and specialized test automation tools, as well as cloud expertise, to help businesses achieve the best cost-benefit solutions, increase their release pace, and boost their continuous integration and delivery infrastructure.\n\nOne of our founders specializes in testing and creating bespoke automation tools, and has developed an innovative AI solution to auto-generate user journeys based on the application's analytic data. Our team's focus on innovation allows us to deliver cutting-edge solutions that are ahead of the curve and tailored to our clients' specific needs.\n\nThe other founder is an expert in cloud and has extensive experience in leading large tech teams, specializing in optimizing and reducing costs on the end-to-end deployment process for testing and production infrastructure. Our team's focus on cost optimization means our clients receive high-quality services at the best possible price.\n\nWe are based in South America and Europe and have an extensive and competitive talent pool that is already supporting clients in North American and EMEA time zones. Our team of highly skilled and experienced professionals is dedicated to providing our clients with exceptional service and support.\n\nAt Haim Engineering, we are committed to staying ahead of the curve, delivering innovative solutions to help our clients increase their release pace and boost their continuous integration and delivery infrastructure. Whether you are looking for bespoke automation tools or cloud expertise, we have the knowledge and experience to deliver results. Contact us today to learn more about our services and how we can help you achieve success."
         },
         "mediumUser": {
           "en-US": "@mate.starter"
