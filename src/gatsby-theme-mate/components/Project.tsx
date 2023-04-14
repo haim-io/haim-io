@@ -86,7 +86,7 @@ const TextContainer = styled.div`
   width: calc(100% - ${CARD_HEIGHT});
 
   ${MEDIA_QUERY_SMALL} {
-    width: calc(100% - (${CARD_HEIGHT} / 2));
+    width: calc(100% - (${CARD_HEIGHT} / 1.5));
   }
 `;
 
@@ -95,7 +95,7 @@ const ImageContainer = styled.div`
   width: ${CARD_HEIGHT};
 
   ${MEDIA_QUERY_SMALL} {
-    width: calc(${CARD_HEIGHT} / 2);
+    width: calc(${CARD_HEIGHT} / 1.5);
   }
 `;
 
@@ -104,6 +104,7 @@ const ProjectImage = styled(Image)`
   height: ${CARD_HEIGHT};
   padding: 40px;
   margin-top: 0px;
+  object-fit: contain;
 
   ${MEDIA_QUERY_SMALL} {
     height: calc(${CARD_HEIGHT} / 2);

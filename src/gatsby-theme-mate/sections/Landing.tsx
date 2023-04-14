@@ -22,7 +22,7 @@ const LandingPage = () => {
         textAlign="center"
         as="h1"
         color="primary"
-        fontSize={[5, 6]}
+        fontSize={[4, 5, 6]}
         mb={[3, 4, 5]}
       >
         {`${name}!`}
@@ -31,8 +31,8 @@ const LandingPage = () => {
       <Heading
         as="h2"
         color="primary"
-        fontSize={[3, 4]}
-        mb={[3, 5]}
+        fontSize={[2, 3, 4]}
+        mb={[5, 6]}
         textAlign="center"
         style={centerHorizontally}
       >
@@ -45,7 +45,7 @@ const LandingPage = () => {
               </Text>
             ))}
         </TextLoop> */}
-        <Text width={[500, 800]} key={subheader}>
+        <Text maxWidth={[500, 800]} key={subheader}>
           {subheader}
         </Text>
       </Heading>
@@ -53,12 +53,12 @@ const LandingPage = () => {
       <Heading
         as="h3"
         color="primary"
-        fontSize={[2, 3]}
+        fontSize={[1, 2]}
         mb={[3, 5]}
         textAlign="center"
         style={centerHorizontally}
       >
-        <Text width={[500, 800]} key={subheaderParagraph}>
+        <Text maxWidth={[500, 800]} key={subheaderParagraph}>
           {subheaderParagraph}
         </Text>
       </Heading>
