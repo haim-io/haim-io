@@ -8,6 +8,17 @@ const plugins = [
       spaceId: SPACE_ID,
     },
   },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `content`,
+      path: `${__dirname}/src/content`,
+    },
+  },
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {},
+  }
 ];
 
 if (ANALYTICS_ID) {

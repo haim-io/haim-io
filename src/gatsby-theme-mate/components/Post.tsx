@@ -69,7 +69,6 @@ type PostContainerProps = {
 const PostContainer = ({ url, title, children }: PostContainerProps) => (
   <a
     href={url}
-    target="__blank"
     title={title}
     style={{ textDecoration: 'none' }}
   >
