@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Heading, Flex, Box, Text } from "rebass/styled-components";
 import Layout from "../../gatsby-theme-mate/components/Layout";
 
 const Post = ({ data }) => {
@@ -8,11 +9,22 @@ const Post = ({ data }) => {
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
-      <div>
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+      <Box
+        sx={{
+          maxWidth: 'clamp(26ch, 50%, 52ch)',
+          mx: "auto",
+          px: 3,
+        }}
+      >
+        <Heading fontSize={[5, 6, 7]} color="primary" as="h1">
+          {frontmatter.title}
+        </Heading>
+        <Heading fontSize={[2, 3, 4]} color="primary" as="h2">
+          {frontmatter.date}
+        </Heading>
+        <hr />
         <div dangerouslySetInnerHTML={{ __html: html }} />
-      </div>
+      </Box>
     </Layout>
   );
 };
