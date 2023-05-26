@@ -2,7 +2,7 @@ const { ACCESS_TOKEN, SPACE_ID, ANALYTICS_ID } = process.env;
 
 const plugins = [
   {
-    resolve: "@vercel/gatsby-plugin-vercel-analytics",
+    resolve: "gatsby-plugin-vercel",
     options: {
       // (optional) Prints metrics in the console when true
       debug: false,
