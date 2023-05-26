@@ -5,6 +5,7 @@ import { loadIcons } from '../utils/icons';
 import { theme } from '../theme';
 import Helmet from './Helmet';
 import 'tippy.js/dist/tippy.css';
+import { Script } from 'gatsby'
 
 declare module 'styled-components' {
   export interface DefaultTheme extends Theme {}
@@ -45,6 +46,7 @@ const Layout = ({ children }: Props) => (
       <Helmet />
       {children}
     </ThemeProvider>
+    <Script id="analytics" defer src="/_vercel/insights/script.js" />
   </main>
 );
 
