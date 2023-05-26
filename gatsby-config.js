@@ -2,13 +2,6 @@ const { ACCESS_TOKEN, SPACE_ID, ANALYTICS_ID } = process.env;
 
 const plugins = [
   {
-    resolve: "gatsby-plugin-vercel",
-    options: {
-      // (optional) Prints metrics in the console when true
-      debug: false,
-    },
-  },
-  {
     resolve: `gatsby-theme-mate`,
     options: {
       accessToken: ACCESS_TOKEN,

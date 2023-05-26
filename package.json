@@ -27,11 +27,8 @@
   },
   "homepage": "https://github.com/EmaSuriano/gatsby-starter-mate#readme",
   "dependencies": {
-    "@vercel/analytics": "^1.0.1",
-    "@vercel/gatsby-plugin-vercel-analytics": "^1.0.10",
     "gatsby": "^4.24.8",
     "gatsby-plugin-google-analytics": "^4.24.0",
-    "gatsby-plugin-vercel": "^1.0.4",
     "gatsby-source-filesystem": "^5.9.0",
     "gatsby-theme-mate": "^2.1.1",
     "gatsby-transformer-remark": "^6.9.0",
