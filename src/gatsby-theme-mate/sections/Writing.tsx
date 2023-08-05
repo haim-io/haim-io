@@ -18,6 +18,7 @@ const Writing = () => {
             slug
             date
             title
+            cover
           }
         }
       }
@@ -25,14 +26,14 @@ const Writing = () => {
   `);
   const posts = data?.allMarkdownRemark?.nodes
     ?.filter(({ frontmatter: { slug } }) => slug)
-    ?.map(({ frontmatter }) => {
+    ?.map(({ frontmatter: { title, slug, date, cover, text, time } }) => {
       return {
-        title: frontmatter.title,
-        text: "subtitle",
-        cover: `123`,
-        url: `/posts/${frontmatter.slug}`,
-        date: frontmatter.date,
-        time: "10min",
+        title,
+        text,
+        cover,
+        url: `/posts/${slug}`,
+        date: date,
+        time,
       };
     });
 
