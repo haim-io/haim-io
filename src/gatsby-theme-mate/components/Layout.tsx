@@ -29,6 +29,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     width: 100vw;
     overflow-x: hidden;
+    scrollbar-gutter: stable;
     font-family: ${(props) => props.theme.fonts.body};
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};

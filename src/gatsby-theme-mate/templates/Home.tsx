@@ -5,6 +5,7 @@ import Landing from '../sections/Landing';
 import About from '../sections/About';
 import Projects from '../sections/Projects';
 import Writing from '../sections/Writing';
+import Videos from '../sections/Videos';
 import Footer from '../components/Footer';
 
 const Home = () => (
@@ -14,6 +15,7 @@ const Home = () => (
     <About />
     <Projects />
     <Writing />
+    <Videos />
     <Footer />
   </Layout>
 );

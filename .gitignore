@@ -65,3 +65,5 @@ public/
 # mac FS
 .DS_Store
 .vscode/
+.vercel
+.env*.local

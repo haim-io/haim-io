@@ -60,14 +60,14 @@ const Background = () => (
     />
 
     <Triangle
-      color="secondary"
+      color="primary"
       height={["50vh", "40vh"]}
       width={["70vw", "40vw"]}
       position="bottom-left"
     />
 
     <Triangle
-      color="primary"
+      color="secondary"
       height={["40vh", "15vh"]}
       width={["100vw", "100vw"]}
       position="bottom-right"
