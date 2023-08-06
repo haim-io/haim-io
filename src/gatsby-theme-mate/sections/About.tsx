@@ -12,6 +12,8 @@ import { SECTION } from '../utils/constants';
 const About = () => {
   const { markdown, profile } = useAboutMeQuery();
 
+  console.log(profile)
+
   return (
     <Section.Container id={SECTION.about} Background={Background}>
       <Section.Header name={SECTION.about} icon="🙋‍♂️" label="person" />

@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SocialLink as SocialLinkType } from '../types';
 import { getIconDefinition } from '../utils/icons';
 
-type Props = SocialLinkType & {
+export type SocialLinkProps = SocialLinkType & {
   invert?: boolean;
 };
 
-const SocialLink = ({ icon, name, url, invert }: Props) => {
+const SocialLink = ({ icon, name, url, invert }: SocialLinkProps) => {
   const iconDefinition = getIconDefinition(icon);
   if (!iconDefinition) {
     return null;

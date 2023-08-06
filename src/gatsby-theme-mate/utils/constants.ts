@@ -8,6 +8,7 @@ export const NETLIFY_URL = 'https://www.netlify.com/';
 export enum SECTION {
   home = 'Home',
   about = 'About us',
+  team = 'The team',
   projects = 'Projects',
   writing = 'Writing',
   videos = 'Videos'
