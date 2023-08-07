@@ -5,7 +5,8 @@ import { Fade } from 'react-awesome-reveal'
 import Section from '../components/Section'
 import Triangle from '../components/Triangle'
 import { SECTION } from '../utils/constants'
-import profile from '../../../media/icon.png'
+import filippo from '../../../media/filippo.jpeg'
+import furlan from '../../../media/furlan.jpeg'
 import SocialLink, { SocialLinkProps } from '../components/SocialLink'
 import { Card } from '../components/Card'
 
@@ -17,18 +18,18 @@ const Team = () => {
   const peopleData = [
     {
       name: 'Filippo Raimondi',
-      profileImage: profile,
+      profileImage: filippo,
       description: 'Principle Software Engineer in Test, QA Lead',
       socialLinks: [{
-        icon: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/in/filippo-raimondi-84836938/', invert: false
+        icon: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/in/filippo-raimondi', invert: false
       }] as SocialLinkProps[]
     },
     {
       name: 'Furlan',
-      profileImage: profile,
+      profileImage: furlan,
       description: 'Experienced professional',
       socialLinks: [{
-        icon: 'linkedin', name: 'LinkedIn', url: '', invert: false
+        icon: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/in/ffurlansilva/', invert: false
       }] as SocialLinkProps[]
     },
     // Add more people data here
@@ -74,11 +75,13 @@ const Team = () => {
 }
 
 const ProfilePicture = styled(Image)`
-  border-radius: 50%;
+  border-radius: 0;
   transition: all 0.4s ease-out;
+  width: 100%;
+  aspect-ratio: auto;
 
   &:hover {
-    border-radius: 20%;
+    border-radius: 50%;
   }
 `
 
