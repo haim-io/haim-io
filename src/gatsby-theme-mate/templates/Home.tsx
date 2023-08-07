@@ -19,6 +19,7 @@ const Home = () => (
     <Writing />
     <Videos />
     <Footer />
+    <div className="modal-container" />
   </Layout>
 )
 
