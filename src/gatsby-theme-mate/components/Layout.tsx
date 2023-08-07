@@ -4,7 +4,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { loadIcons } from '../utils/icons';
 import { theme } from '../theme';
 import Helmet from './Helmet';
-import 'tippy.js/dist/tippy.css';
+// import 'tippy.js/dist/tippy.css';
 import { Script } from 'gatsby'
 
 declare module 'styled-components' {
