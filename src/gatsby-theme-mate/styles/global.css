@@ -7,3 +7,48 @@
   height: auto;
   aspect-ratio: 16 / 9;
 };
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal {
+  position: fixed;
+  inset: 0px;
+  padding: 10px;
+  background-color: white;
+  z-index: 1001;
+  overflow: auto;
+}
+
+.modal-content-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  color: black;
+  overflow: auto;
+}
+
+.modal-action-bar {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: white;
+  display: flex;
+  justify-content: flex-end;
+  /* Add any additional styling for the action bar */
+}
+
+.modal-btn {
+  color: black;
+  cursor: pointer;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

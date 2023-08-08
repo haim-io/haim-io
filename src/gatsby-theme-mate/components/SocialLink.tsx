@@ -1,28 +1,28 @@
 import React from 'react';
 import { Link } from 'rebass/styled-components';
-import Tippy from '@tippy.js/react';
+// import Tippy from '@tippy.js/react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SocialLink as SocialLinkType } from '../types';
 import { getIconDefinition } from '../utils/icons';
 
-type Props = SocialLinkType & {
+export type SocialLinkProps = SocialLinkType & {
   invert?: boolean;
 };
 
-const SocialLink = ({ icon, name, url, invert }: Props) => {
+const SocialLink = ({ icon, name, url, invert }: SocialLinkProps) => {
   const iconDefinition = getIconDefinition(icon);
   if (!iconDefinition) {
     return null;
   }
 
   return (
-    <Tippy
-      content={name}
-      placement="bottom"
-      trigger="mouseenter focus"
-      arrow={false}
-    >
+    // <Tippy
+    //   content={name}
+    //   placement="bottom"
+    //   trigger="mouseenter focus"
+    //   arrow={false}
+    // >
       <IconLink
         href={url}
         target="_blank"
@@ -32,7 +32,7 @@ const SocialLink = ({ icon, name, url, invert }: Props) => {
       >
         <FontAwesomeIcon icon={iconDefinition} title={name} />
       </IconLink>
-    </Tippy>
+    // </Tippy>
   );
 };
 
