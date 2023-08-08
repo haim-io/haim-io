@@ -26,7 +26,9 @@ function Modal({ onClose, children, actionBar }) {
         />
         <div className="modal">
           <div className="modal-content">
-            {children}
+            <div className="modal-content-inner">
+              {children}
+            </div>
             <div className="modal-action-bar">{actionBar}</div>
           </div>
         </div>

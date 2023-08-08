@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, Image, Flex, Button, Text } from 'rebass/styled-components'
+import { Box, Image, Flex, Button, Text, Heading } from 'rebass/styled-components'
 import styled from 'styled-components'
 import { Fade } from 'react-awesome-reveal'
 import Section from '../components/Section'
@@ -18,19 +18,21 @@ const CardContainer = styled(Box)`
 const Team = () => {
   const peopleData = [
     {
-      name: 'Filippo Raimondi',
-      profileImage: filippo,
-      description: 'Founder & CPO with 16+ Years in Software Engineering | CI/CD Strategist | Alumni of ThoughtWorks, IBM, ASOS & More | Open Source Testing Pioneer for Cypress | Metrocamp Graduate.',
-      socialLinks: [{
-        icon: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/in/filippo-raimondi', invert: false
-      }] as SocialLinkProps[]
-    },
-    {
       name: 'Felipe Furlan',
       profileImage: furlan,
+      title: 'Founder & CEO',
       description: 'Founder and CEO with extensive knowledge in technology, Felipe Furlan led the digital transformation process of different companies. Its mission is effectively constructing Strategies and Organization of Products and Technology. Felipe has been living in Germany since 2019 and serves as CIO at MZ and VP of Engineering at Jimdo, both companies in the Information Technology sector. Felipe holds a Systems Analysis degree from PUC Campinas and an MBA in Strategic IT Management from FIAP.',
       socialLinks: [{
         icon: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/in/ffurlansilva/', invert: false
+      }] as SocialLinkProps[]
+    },
+    {
+      name: 'Filippo Raimondi',
+      profileImage: filippo,
+      title: 'Founder & CPO',
+      description: 'Founder & CPO with 16+ Years in Software Engineering | CI/CD Strategist | Alumni of ThoughtWorks, IBM, ASOS & More | Open Source Testing Pioneer for Cypress | Metrocamp Graduate.',
+      socialLinks: [{
+        icon: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/in/filippo-raimondi', invert: false
       }] as SocialLinkProps[]
     }
   ]
@@ -69,14 +71,19 @@ const Team = () => {
               src={modalPerson.profileImage}
               alt={modalPerson.name}
             />
-            <h3>{modalPerson.name}</h3>
-            <p>{modalPerson.description}</p>
+            <Heading mt={4} mb={3} color="black" fontSize={['2rem', '2.5rem', '3rem']} as="h2">
+              {modalPerson.name}
+            </Heading>
+            <Heading mb={3} color="black" fontSize={['1.3rem', '1.6rem', '2rem']} as="h3">
+              {modalPerson.title}
+            </Heading>
+            <Text><p>{modalPerson.description}</p></Text>
           </Flex>
         </Modal>}
         {peopleData.map((person, index) => (
           <CardContainer
             key={index}
-            width={[1, 1 / 2, 1 / 3]} // Adjust the width for different screen sizes
+            width={[1 / 2, 1 / 2, 1 / 3]} // Adjust the width for different screen sizes
             pr={[1, 2, 4]}
             mt={2}
           >
@@ -90,7 +97,6 @@ const Team = () => {
                   alt={person.name}
                 />
                 <h3>{person.name}</h3>
-                {/* <p>{person.description}</p> */}
                 <Flex alignItems="center" justifyContent="space-between" flexWrap="wrap">
                   <div>
                     {person.socialLinks.map((sl) => (
