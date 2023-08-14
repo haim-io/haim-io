@@ -5,7 +5,8 @@ import { Fade } from 'react-awesome-reveal'
 import Section from '../components/Section'
 import Triangle from '../components/Triangle'
 import { SECTION } from '../utils/constants'
-import filippo from '../../../media/filippo.jpeg'
+import filippo from '../../../media/filippo.jpg'
+import sam from '../../../media/sam.jpg'
 import furlan from '../../../media/furlan.jpeg'
 import SocialLink, { SocialLinkProps } from '../components/SocialLink'
 import { Card } from '../components/Card'
@@ -21,7 +22,7 @@ const Team = () => {
       name: 'Filippo Raimondi',
       profileImage: filippo,
       title: 'Founder & CEO',
-      description: 'With 16+ Years in Software Engineering | CI/CD Strategist | Alumni of ThoughtWorks, IBM, ASOS & More | Open Source Testing Pioneer for Cypress | Metrocamp Graduate.',
+      description: 'With over 16 years of experience in software engineering, I have specialized in revolutionizing testing practices within complex organizational structures. An alumni of ThoughtWorks, IBM, and ASOS, my expertise is further underscored by significant contributions to open-source testing, most notably with Cypress. My leadership embodies a combination of strategic vision and deep technical insight, ensuring high-performing teams that deliver excellence in testing processes and methodologies.',
       socialLinks: [{
         icon: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/in/filippo-raimondi', invert: false
       }] as SocialLinkProps[]
@@ -33,6 +34,15 @@ const Team = () => {
       description: 'With extensive knowledge in technology, Felipe Furlan led the digital transformation process of different companies. Its mission is effectively constructing Strategies and Organization of Products and Technology. Felipe has been living in Germany since 2019 and serves as CIO at MZ and VP of Engineering at Jimdo, both companies in the Information Technology sector. Felipe holds a Systems Analysis degree from PUC Campinas and an MBA in Strategic IT Management from FIAP.',
       socialLinks: [{
         icon: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/in/ffurlansilva/', invert: false
+      }] as SocialLinkProps[]
+    },
+    {
+      name: 'Sam Taylor',
+      profileImage: sam,
+      title: 'Founder & CTO',
+      description: 'Experienced technical leader adept at accelerating delivery in complex regulated organisations, startups, and media. With a proven track record spanning 16+ years, Sam has the experience to lead strategic planning and the technical insight to enable high-performing teams.',
+      socialLinks: [{
+        icon: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/in/samjltaylor/', invert: false
       }] as SocialLinkProps[]
     }
   ]
