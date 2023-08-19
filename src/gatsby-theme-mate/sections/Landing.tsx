@@ -21,7 +21,7 @@ const LandingPage = () => {
       <Heading
         textAlign="center"
         as="h1"
-        color="primary"
+        color="white"
         fontSize={[4, 5, 6]}
         mb={[3, 4, 5]}
       >
@@ -30,7 +30,7 @@ const LandingPage = () => {
 
       <Heading
         as="h2"
-        color="primary"
+        color="white"
         fontSize={[2, 3, 4]}
         mb={[5, 6]}
         textAlign="center"
@@ -52,7 +52,7 @@ const LandingPage = () => {
 
       <Heading
         as="h3"
-        color="primary"
+        color="white"
         fontSize={[1, 2]}
         mb={[3, 5]}
         textAlign="center"
