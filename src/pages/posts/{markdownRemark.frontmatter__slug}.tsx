@@ -11,7 +11,7 @@ const Post = ({ data }) => {
     <Layout>
       <Box
         sx={{
-          maxWidth: 'clamp(26ch, 50%, 52ch)',
+          maxWidth: 'min(92%, 60ch)',
           mx: "auto",
           px: 3,
         }}
