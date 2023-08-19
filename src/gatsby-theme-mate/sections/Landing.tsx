@@ -1,18 +1,18 @@
-import React from 'react';
-import { Heading, Flex, Box, Text } from 'rebass/styled-components';
-import TextLoop from 'react-text-loop';
-import Section from '../components/Section';
-import SocialLink from '../components/SocialLink';
-import ScrollIcon from '../components/ScrollIcon';
-import Triangle from '../components/Triangle';
-import { useSiteQuery } from '../queries/useSiteQuery';
-import { SECTION } from '../utils/constants';
-import { getSectionHref } from '../utils/helpers';
+import React from 'react'
+import { Heading, Flex, Box, Text } from 'rebass/styled-components'
+import TextLoop from 'react-text-loop'
+import Section from '../components/Section'
+import SocialLink from '../components/SocialLink'
+import ScrollIcon from '../components/ScrollIcon'
+import Triangle from '../components/Triangle'
+import { useSiteQuery } from '../queries/useSiteQuery'
+import { SECTION } from '../utils/constants'
+import { getSectionHref } from '../utils/helpers'
 
-const centerHorizontally = { marginRight: 'auto', marginLeft: 'auto' };
+const centerHorizontally = { marginRight: 'auto', marginLeft: 'auto' }
 
 const LandingPage = () => {
-  const { name, roles, socialLinks, deterministic } = useSiteQuery();
+  const { name, roles, socialLinks, deterministic } = useSiteQuery()
   const subheader = "Boosting your continuous integration, delivery infrastructure to increase your release pace."
   const subheaderParagraph = `The name Haim has its origins in Hebrew and translates to "life." At our company, we hold the belief that software engineering plays a fundamental role in the success of an organization, and it is therefore imperative to treat it as a living organism that can adapt, improve, and evolve.`
 
@@ -21,16 +21,17 @@ const LandingPage = () => {
       <Heading
         textAlign="center"
         as="h1"
-        color="white"
+        color="primary"
         fontSize={[4, 5, 6]}
         mb={[3, 4, 5]}
+        mt={[2, 3, 4]}
       >
         {`${name}!`}
       </Heading>
 
       <Heading
         as="h2"
-        color="white"
+        color="primary"
         fontSize={[2, 3, 4]}
         mb={[5, 6]}
         textAlign="center"
@@ -52,7 +53,7 @@ const LandingPage = () => {
 
       <Heading
         as="h3"
-        color="white"
+        color="primary"
         fontSize={[1, 2]}
         mb={[3, 5]}
         textAlign="center"
@@ -73,8 +74,8 @@ const LandingPage = () => {
 
       <ScrollIcon href={`#${getSectionHref(SECTION.about)}`} />
     </Section.Container>
-  );
-};
+  )
+}
 
 const Background = () => (
   <>
@@ -92,8 +93,8 @@ const Background = () => (
 
     <Triangle
       color="primary"
-      height={['25vh', '35vh']}
-      width={['75vw', '60vw']}
+      height={['25vh', '25vh']}
+      width={['85vw', '95vw']}
       position="top-right"
     />
 
@@ -104,6 +105,6 @@ const Background = () => (
       position="bottom-right"
     />
   </>
-);
+)
 
-export default LandingPage;
+export default LandingPage

@@ -1,14 +1,14 @@
-import React from 'react'
-import Headroom from 'react-headroom'
-import { Box, Link as RebassLink, Flex, Image } from 'rebass/styled-components'
-import styled from 'styled-components'
-import Link from './Link'
-import { useHelmetQuery } from '../queries/useHelmetQuery'
-import { SECTION } from '../utils/constants'
-import { getSectionHref } from '../utils/helpers'
+import React from 'react';
+import Headroom from 'react-headroom';
+import { Box, Link as RebassLink, Flex, Image } from 'rebass/styled-components';
+import styled from 'styled-components';
+import Link from './Link';
+import { useHelmetQuery } from '../queries/useHelmetQuery';
+import { SECTION } from '../utils/constants';
+import { getSectionHref } from '../utils/helpers';
 
 const Header = () => {
-  const { profile } = useHelmetQuery()
+  const { profile } = useHelmetQuery();
 
   return (
     <StyledHeadroom>
@@ -35,7 +35,7 @@ const Header = () => {
             .filter((id) => id !== 'home')
             .map((id) => (
               <Box key={id} ml={[2, 3]} color="background" fontSize={[2, 3]}>
-                <Link style={{ color: 'black' }} href={`#${id}`} tabIndex={0}>
+                <Link href={`#${id}`} tabIndex={0}>
                   {SECTION[id]}
                 </Link>
               </Box>
@@ -43,8 +43,8 @@ const Header = () => {
         </Flex>
       </Flex>
     </StyledHeadroom>
-  )
-}
+  );
+};
 
 const StyledHeadroom = styled(Headroom)`
   * {
@@ -57,6 +57,6 @@ const StyledHeadroom = styled(Headroom)`
 
   position: absolute;
   width: 100%;
-`
+`;
 
-export default Header
+export default Header;
