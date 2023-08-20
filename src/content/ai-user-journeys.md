@@ -1,6 +1,6 @@
 ---
 slug: "ai-visual-tests"
-date: "2023-06-24"
+date: "2023-08-20"
 title: "Visual Tests Powered by AI"
 cover: "https://images.ctfassets.net/51dzuuls8jkp/3AfdhSdhGvU5npgGRVKH3S/cb928398471578dbd84e438e0826859e/0-1.jpg"
 ---
