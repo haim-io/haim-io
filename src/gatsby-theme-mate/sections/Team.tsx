@@ -122,7 +122,7 @@ const Team = () => {
                   src={person.profileImage}
                   alt={person.name}
                 />
-                <h3>{person.name}</h3>
+                <h3 style={{ minHeight: '46px' }}>{person.name}</h3>
                 <Flex alignItems="center" justifyContent="space-between" flexWrap="wrap">
                   <div>
                     {person.socialLinks.map((sl) => (
