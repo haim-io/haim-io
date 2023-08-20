@@ -8,6 +8,7 @@ import {
   faGlobe,
   faEnvelope,
   faCoffee,
+  faBars
 } from '@fortawesome/free-solid-svg-icons';
 
 export const ICONS = [
@@ -18,4 +19,5 @@ export const ICONS = [
   faGlobe,
   faEnvelope,
   faCoffee,
+  faBars
 ];

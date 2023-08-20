@@ -52,3 +52,32 @@
 .overflow-hidden {
   overflow: hidden;
 }
+
+.nav-btn {
+  display: block !important;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.mobile-nav-links a {
+  padding: 1rem 0rem;
+}
+
+.desktop-nav-links {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .nav-btn {
+    display: none !important;
+  }
+
+  .desktop-nav-links {
+    display: flex;
+  }
+}
