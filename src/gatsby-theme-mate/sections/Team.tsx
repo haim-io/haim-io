@@ -156,7 +156,10 @@ const ProfilePicture = styled(Image)`
     border-radius: 10%;
   }
   
-  @media screen and (min-width: 350px) and (max-width: 725px) {
+  @media screen and (min-width: 350px) and (max-width: 425px) {
+    height: 200px;
+  }
+  @media screen and (min-width: 426px) and (max-width: 725px) {
     height: 350px;
   }
   @media screen and (min-width: 726px) {
