@@ -34,7 +34,7 @@ const Project = ({
       <ImageContainer>
         <ProjectImage {...logo} />
         <ProjectTag>
-          <Flex
+          {/* <Flex
             m={1}
             style={{
               float: 'right',
@@ -46,15 +46,15 @@ const Project = ({
             <Box mx={1} fontSize={4}>
               <SocialLink name="Homepage" icon="globe" url={homepage} />
             </Box>
-          </Flex>
-          <ImageLabel
+          </Flex> */}
+          {/* <ImageLabel
             bg="primary"
             color="background"
             position="bottom-right"
             round
           >
             {type}
-          </ImageLabel>
+          </ImageLabel> */}
           <Hide query="md">
             <ImageLabel bg="muted" color="primary">
               {publishedDate}
