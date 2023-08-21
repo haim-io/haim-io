@@ -47,7 +47,7 @@ const Team = () => {
     {
       name: 'Felipe Furlan',
       profileImage: furlan,
-      title: 'Founder & COO & CFO',
+      title: 'Founder & COO',
       description: 'With extensive knowledge in technology, Felipe Furlan led the digital transformation process of different companies. Its mission is effectively constructing Strategies and Organization of Products and Technology. Felipe has been living in Germany since 2019 and serves as CIO at MZ and VP of Engineering at Jimdo, both companies in the Information Technology sector. Felipe holds a Systems Analysis degree from PUC Campinas and an MBA in Strategic IT Management from FIAP.',
       socialLinks: [{
         icon: 'linkedin', name: 'LinkedIn', url: 'https://www.linkedin.com/in/ffurlansilva/', invert: false
