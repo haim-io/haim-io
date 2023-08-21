@@ -36,7 +36,7 @@ const SocialLink = ({ icon, name, url, invert }: SocialLinkProps) => {
   );
 };
 
-const IconLink = styled(Link)<{ invert?: boolean }>`
+export const IconLink = styled(Link)<{ invert?: boolean }>`
   transition: opacity 0.4s;
   color: ${({ theme, invert }) =>
     invert ? theme.colors.background : theme.colors.primary};
